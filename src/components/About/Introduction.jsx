@@ -34,7 +34,7 @@ const Introduction = () => {
             </div>
             <p className="text-lg text-dark-300 leading-relaxed">
               Hi, my name is <span className="text-primary-400 font-semibold">Rheisan Firnandatama Rizky Satria</span>. 
-              I am currently an undergraduate student in my 6th semester, majoring in 
+              I am currently an undergraduate student in my 7th semester, majoring in 
               <span className="text-white font-medium"> Information Technology</span> at 
               <span className="text-white font-medium"> Universitas Negeri Yogyakarta</span>.
             </p>
@@ -84,7 +84,7 @@ const Introduction = () => {
             <div className="w-16 h-16 bg-primary-400/10 text-primary-400 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
               <FaGraduationCap className="w-8 h-8" />
             </div>
-            <div className="text-3xl font-bold text-primary-400 font-mono mb-2">6th</div>
+            <div className="text-3xl font-bold text-primary-400 font-mono mb-2">7th</div>
             <div className="text-sm text-dark-400 uppercase tracking-wide font-medium">Semester</div>
           </div>
 
