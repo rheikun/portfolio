@@ -6,7 +6,7 @@ import Modal from "../components/projects/Modal";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { projects } from "../data/projects";
-import { FaRocket, FaCode, FaSearch } from "react-icons/fa";
+import { FaRocket, FaCode, FaSearch, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 const Projects = () => {
   const [selectedTag, setSelectedTag] = useState("All");
@@ -32,14 +32,21 @@ const Projects = () => {
   const handleViewDetails = (project) => setSelectedProject(project);
 
   return (
-    <div className="bg-dark-950 min-h-screen relative">
+    <div className="bg-gradient-to-br from-green-900 via-emerald-950 to-neutral-950 min-h-screen relative overflow-hidden">
       <Navbar />
 
-      {/* Enhanced Background Elements */}
+      {/* Modern Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary-400 rounded-full mix-blend-multiply filter blur-3xl opacity-5 animate-float" />
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-primary-300 rounded-full mix-blend-multiply filter blur-3xl opacity-5 animate-float" style={{ animationDelay: '3s' }} />
-        <div className="absolute top-3/4 right-1/3 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-3 animate-float" style={{ animationDelay: '6s' }} />
+        {/* Organic shapes */}
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-emerald-400/8 to-transparent rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-br from-teal-400/8 to-transparent rounded-full blur-2xl animate-float" style={{ animationDelay: '3s' }} />
+        <div className="absolute top-3/4 right-1/3 w-64 h-64 bg-gradient-to-br from-cyan-400/6 to-transparent rounded-full blur-xl animate-float" style={{ animationDelay: '6s' }} />
+        
+        {/* Hexagonal pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(16,185,129,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.02)_1px,transparent_1px)] bg-[size:40px_40px]" />
+        
+        {/* Gradient overlays */}
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-emerald-950/40" />
       </div>
 
       <section className="relative z-10 pt-32 pb-20">
@@ -120,20 +127,20 @@ const Projects = () => {
             )}
           </div>
 
-          {/* Call to Action */}
-          <div className="text-center mt-20" data-aos="fade-up">
-            <div className="max-w-2xl mx-auto p-8 bg-gradient-to-r from-dark-800/50 to-dark-700/50 backdrop-blur-sm border border-dark-600/50 rounded-2xl">
-              <h3 className="text-2xl font-bold text-white mb-4">Interested in Collaboration?</h3>
-              <p className="text-dark-300 mb-6">
-                I'm always excited to work on innovative projects and explore new technologies. 
-                Let's create something amazing together!
-              </p>
+            {/* Social Links Section */}
+            <div className="text-center mt-20" data-aos="fade-up">
+              <div className="max-w-2xl mx-auto p-8 bg-gradient-to-r from-dark-800/50 to-dark-700/50 backdrop-blur-sm border border-dark-600/50 rounded-2xl">
+                <h3 className="text-2xl font-bold text-white mb-4">Connect With Me</h3>
+                <p className="text-dark-300 mb-6">
+                  Follow my journey and stay updated with my latest projects and insights in AI and machine learning.
+                </p>
+                
               <a
                 href="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-400 to-primary-300 text-dark-950 rounded-xl font-bold hover:from-primary-300 hover:to-primary-200 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-primary-400/25"
               >
                 <FaRocket className="w-5 h-5" />
-                Let's Connect
+                Let's Collaborate
               </a>
             </div>
           </div>
