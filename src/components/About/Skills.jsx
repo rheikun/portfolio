@@ -241,7 +241,7 @@ const Skills = () => {
       </div>
 
       {/* Stats Section */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6" data-aos="fade-up">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-6" data-aos="fade-up">
         <div className="text-center p-6 bg-gradient-to-br from-dark-900/50 to-dark-800/30 backdrop-blur-sm border border-dark-700/50 rounded-2xl hover:border-primary-400/30 transition-all duration-300">
           <div className="text-3xl font-bold text-primary-400 font-mono mb-2">15+</div>
           <div className="text-sm text-dark-400 font-medium">Technologies</div>
@@ -250,10 +250,10 @@ const Skills = () => {
           <div className="text-3xl font-bold text-primary-400 font-mono mb-2">5</div>
           <div className="text-sm text-dark-400 font-medium">Categories</div>
         </div>
-        <div className="text-center p-6 bg-gradient-to-br from-dark-900/50 to-dark-800/30 backdrop-blur-sm border border-dark-700/50 rounded-2xl hover:border-primary-400/30 transition-all duration-300">
+        {/* <div className="text-center p-6 bg-gradient-to-br from-dark-900/50 to-dark-800/30 backdrop-blur-sm border border-dark-700/50 rounded-2xl hover:border-primary-400/30 transition-all duration-300">
           <div className="text-3xl font-bold text-primary-400 font-mono mb-2">3+</div>
           <div className="text-sm text-dark-400 font-medium">Years Experience</div>
-        </div>
+        </div> */}
         <div className="text-center p-6 bg-gradient-to-br from-dark-900/50 to-dark-800/30 backdrop-blur-sm border border-dark-700/50 rounded-2xl hover:border-primary-400/30 transition-all duration-300">
           <div className="text-3xl font-bold text-primary-400 font-mono mb-2">∞</div>
           <div className="text-sm text-dark-400 font-medium">Learning</div>
