@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop />
-      <div className="bg-black min-h-screen flex flex-col">
+      <div className="bg-gradient-to-br from-green-900 via-emerald-950 to-neutral-950 min-h-screen flex flex-col">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
