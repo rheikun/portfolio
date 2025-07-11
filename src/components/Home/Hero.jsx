@@ -49,7 +49,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-transparent z-0 pointer-events-none" />
       <div className="absolute top-1/4 right-1/4 w-80 h-80 z-0 bg-primary-400 rounded-full blur-3xl opacity-5 animate-float" />
       <div className="absolute bottom-0 left-1/4 w-80 h-80 z-0 bg-primary-300 rounded-full blur-3xl opacity-5 animate-float" style={{ animationDelay: '2s' }} />
-      <div className="absolute bottom-0 right-1/3 w-64 h-64 z-0 bg-blue-500 rounded-full blur-3xl opacity-3 animate-float" style={{ animationDelay: '4s' }} />
+      <div className="absolute top-2/4 right-1/3 w-64 h-64 bg-gradient-to-br from-red-400/6 to-transparent rounded-full blur-xl animate-float" style={{ animationDelay: '6s' }} />
 
       {/* Content */}
       <div className="relative z-10 container-custom py-8 flex items-center min-h-[100dvh] lg:min-h-0">
